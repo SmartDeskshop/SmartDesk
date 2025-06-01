@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Center | SmartDesk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-light: #ebf2ff;
+      --dark: #1f2937;
+      --gray: #6b7280;
+      --light-gray: #f9fafb;
+      --border: #e5e7eb;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-gray);
+      color: var(--dark);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--dark);
+      margin: 0 0 15px 0;
+    }
+
+    .search-bar {
+      max-width: 600px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    input[type="search"] {
+      width: 100%;
+      padding: 15px 20px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--gray);
+    }
+
+    .help-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 60px 0;
+    }
+
+    .help-card {
+      background: white;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .help-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .help-card h3 {
+      font-size: 20px;
+      margin: 0 0 15px 0;
+      color: var(--primary);
+    }
+
+    .help-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .help-card li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .help-card li:last-child {
+      border-bottom: none;
+    }
+
+    .help-card a {
+      color: var(--dark);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .help-card a:hover {
+      color: var(--primary);
+    }
+
+    .icon {
+      margin-right: 10px;
+      color: var(--primary);
+    }
+
+    .contact-promo {
+      background: var(--primary-light);
+      border-radius: 12px;
+      padding: 40px;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .contact-promo h2 {
+      margin: 0 0 20px 0;
+      color: var(--dark);
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 12px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 15px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--primary-dark);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 80px;
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+      
+      .help-section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">SmartDesk</div>
+      <h1>How can we help you today?</h1>
+      <div class="search-bar">
+        <input type="search" placeholder="Search our help articles...">
+        <span class="search-icon">🔍</span>
+      </div>
+    </header>
+
+    <div class="help-section">
+      <div class="help-card">
+        <h3>Getting Started</h3>
+        <ul>
+          <li><a href="#"><span class="icon">📦</span> Product Setup Guide</a></li>
+          <li><a href="#"><span class="icon">🛠️</span> Installation Help</a></li>
+          <li><a href="#"><span class="icon">📱</span> Mobile App Configuration</a></li>
+          <li><a href="#"><span class="icon">🔌</span> Connectivity Issues</a></li>
+        </ul>
+      </div>
+
+      <div class="help-card">
+        <h3>Account & Billing</h3>
+        <ul>
+          <li><a href="#"><span class="icon">👤</span> Manage Your Account</a></li>
+          <li><a href="#"><span class="icon">💳</span> Payment Methods</a></li>
+          <li><a href="#"><span class="icon">🧾</span> Invoice Questions</a></li>
+          <li><a href="#"><span class="icon">🔄</span> Subscription Changes</a></li>
+        </ul>
+      </div>
+
+      <div class="help-card">
+        <h3>Troubleshooting</h3>
+        <ul>
+          <li><a href="#"><span class="icon">⚠️</span> Common Error Codes</a></li>
+          <li><a href="#"><span class="icon">🔧</span> Hardware Diagnostics</a></li>
+          <li><a href="#"><span class="icon">🔄</span> Software Updates</a></li>
+          <li><a href="#"><span class="icon">📶</span> Connectivity Solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="help-card">
+        <h3>Product Guides</h3>
+        <ul>
+          <li><a href="#"><span class="icon">🎮</span> Features Overview</a></li>
+          <li><a href="#"><span class="icon">⚙️</span> Advanced Settings</a></li>
+          <li><a href="#"><span class="icon">🤝</span> Integration Help</a></li>
+          <li><a href="#"><span class="icon">📊</span> Usage Analytics</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact-promo">
+      <h2>Still need help? Our team is here for you</h2>
+      <p>Can't find what you're looking for? Contact our support team directly for personalized assistance.</p>
+      <a href="contact.html" class="btn">Contact Support</a>
+    </div>
+
+    <footer>
+      <p>© 2025 SmartDesk Technologies. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

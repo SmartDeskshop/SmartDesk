@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing - Smart Shop Manager</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f0f4f8;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1e88e5;
+      margin-bottom: 50px;
+    }
+
+    .pricing-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 2rem;
+      color: #1e88e5;
+      margin: 20px 0;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .features li {
+      margin: 10px 0;
+    }
+
+    .btn {
+      background-color: #1e88e5;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #1565c0;
+    }
+
+    @media (max-width: 768px) {
+      .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    header {
+  background-color: #ffe082;
+  color: #4e342e;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  margin: 50px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+  </style>
+</head>
+<header>🚧 This Page is Under Maintenance 🚧</header>
+<body>
+  <div class="container">
+    <h1>Choose Your Plan</h1>
+
+    <div class="pricing-cards">
+      
+      <!-- Free Plan -->
+      <div class="card">
+        <h2>Free</h2>
+        <p class="price">₹0 / month</p>
+        <ul class="features">
+          <li>✔ Basic Stock Management</li>
+          <li>✔ 100 Product Limit</li>
+          <li>✔ Dashboard Access</li>
+          <li>✖ No Cloud Backup</li>
+          <li>✖ No Customer Billing</li>
+        </ul>
+        <a href="#" class="btn">Get Started</a>
+      </div>
+
+      <!-- Standard Plan -->
+      <div class="card">
+        <h2>Premium</h2>
+        <p class="price">₹199 / month</p>
+        <ul class="features">
+          <li>✔ Unlimited Products</li>
+          <li>✔ Cloud Backup</li>
+          <li>✔ Customer Billing</li>
+          <li>✔ Reports & Analytics</li>
+          <li>✔ Priority Support</li>
+        </ul>
+        <a href="#" class="btn">Upgrade</a>
+      </div>
+
+      <!-- Annual Plan -->
+      <div class="card">
+        <h2>Pro Annual</h2>
+        <p class="price">₹1999 / year</p>
+        <ul class="features">
+          <li>✔ All Premium Features</li>
+          <li>✔ 2 Months Free</li>
+          <li>✔ Data Export</li>
+          <li>✔ Multi-User Access</li>
+          <li>✔ Early Feature Access</li>
+        </ul>
+        <a href="#" class="btn">Go Annual</a>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
